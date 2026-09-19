@@ -5,4 +5,8 @@ $clientIp = $_SERVER['REMOTE_ADDR'] ?? '127.0.0.1';
 $method = $_SERVER['REQUEST_METHOD'];
 echo "$method request from $clientIp"; // Result: GET request from 127.0.0.1
 
+// 28. Query String Processing ($_GET)
+$page = filter_input(INPUT_GET, 'page', FILTER_VALIDATE_INT) ?? 1;
+echo "Current Page: $page"; // Result: Current Page: 1
+
 ?>
