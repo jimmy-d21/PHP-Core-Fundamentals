@@ -19,4 +19,9 @@ echo $message; // Result: Success
 $userInput = $_GET['user'] ?? 'Guest';
 echo "Hello, $userInput"; // Result: Hello, Guest
 
+// 10. Nullsafe Operator (?->)
+$userObj = null;
+$country = $userObj?->getProfile()?->country;
+var_dump($country); // Result: NULL
+
 ?>
