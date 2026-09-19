@@ -15,4 +15,8 @@ function sumAll(int ...$numbers): int {
 }
 echo sumAll(10, 20, 30, 40); // Result: 100
 
+// 20. Anonymous / Callback Functions
+$greet = function($name) { return "Hello, $name"; };
+echo $greet("Sarah"); // Result: Hello, Sarah
+
 ?>
