@@ -15,4 +15,8 @@ $message = match($status) {
 };
 echo $message; // Result: Success
 
+// 9. Null Coalescing Operator (??)
+$userInput = $_GET['user'] ?? 'Guest';
+echo "Hello, $userInput"; // Result: Hello, Guest
+
 ?>
