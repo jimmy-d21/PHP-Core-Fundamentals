@@ -21,4 +21,8 @@ $numbers = [1, 2, 3, 4];
 $squared = array_map(fn($n) => $n * $n, $numbers);
 print_r($squared); // Result: [1, 4, 9, 16]
 
+// 16. Array Filtering (array_filter)
+$evens = array_filter($numbers, fn($n) => $n % 2 === 0);
+print_r($evens); // Result: [2, 4]
+
 ?>
