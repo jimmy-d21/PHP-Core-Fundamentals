@@ -14,4 +14,9 @@ function getProfile() {
 }
 echo getProfile(); // Result: User: Alex (Call #1)
 
+// 3. Data Types Inspection
+$price = 19.99;
+$inStock = true;
+var_dump($price, $inStock); // Result: float(19.99) bool(true)
+
 ?>
