@@ -19,4 +19,9 @@ echo sumAll(10, 20, 30, 40); // Result: 100
 $greet = function($name) { return "Hello, $name"; };
 echo $greet("Sarah"); // Result: Hello, Sarah
 
+// 21. Arrow Functions (fn)
+$multiplier = 3;
+$triple = fn($n) => $n * $multiplier;
+echo $triple(5); // Result: 15
+
 ?>
