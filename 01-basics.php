@@ -28,4 +28,9 @@ echo "Casted Quantity: $qtyInt"; // Result: 15
 echo "Echo string 1", " Echo string 2\n"; // Result: Echo string 1 Echo string 2
 print_r(["PHP", "MySQL"]); // Result: Array ( [0] => PHP [1] => MySQL )
 
+// 6. Runtime and Compile-time Constants
+define("DB_PORT", 5432);
+const APP_ENV = "production";
+echo DB_PORT . " | " . APP_ENV; // Result: 5432 | production
+
 ?>
