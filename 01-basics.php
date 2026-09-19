@@ -24,4 +24,8 @@ $rawQty = "15 items";
 $qtyInt = (int)$rawQty;
 echo "Casted Quantity: $qtyInt"; // Result: 15
 
+// 5. Output Methods Comparison
+echo "Echo string 1", " Echo string 2\n"; // Result: Echo string 1 Echo string 2
+print_r(["PHP", "MySQL"]); // Result: Array ( [0] => PHP [1] => MySQL )
+
 ?>
