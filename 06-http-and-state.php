@@ -17,4 +17,9 @@ echo "Submitted user: " . htmlspecialchars($username);
 setcookie("theme", "dark", time() + 3600, "/");
 echo $_COOKIE['theme'] ?? 'light'; // Result: dark (on subsequent request)
 
+// 31. Session Management
+session_start();
+$_SESSION['user_id'] = 42;
+echo "Logged in User ID: " . $_SESSION['user_id']; // Result: Logged in User ID: 42
+
 ?>
