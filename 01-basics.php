@@ -19,4 +19,9 @@ $price = 19.99;
 $inStock = true;
 var_dump($price, $inStock); // Result: float(19.99) bool(true)
 
+// 4. Casting Data Types
+$rawQty = "15 items";
+$qtyInt = (int)$rawQty;
+echo "Casted Quantity: $qtyInt"; // Result: 15
+
 ?>
