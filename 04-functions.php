@@ -24,4 +24,10 @@ $multiplier = 3;
 $triple = fn($n) => $n * $multiplier;
 echo $triple(5); // Result: 15
 
+// 22. Recursion
+function factorial(int $n): int {
+    return $n <= 1 ? 1 : $n * factorial($n - 1);
+}
+echo factorial(5); // Result: 120
+
 ?>
