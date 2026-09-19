@@ -24,4 +24,10 @@ $userObj = null;
 $country = $userObj?->getProfile()?->country;
 var_dump($country); // Result: NULL
 
+// 11. Loops: foreach with Key-Value
+$prices = ["Apple" => 1.2, "Banana" => 0.8];
+foreach ($prices as $fruit => $cost) {
+    echo "$fruit costs $$cost\n"; // Result: Apple costs $1.2 ...
+}
+
 ?>
