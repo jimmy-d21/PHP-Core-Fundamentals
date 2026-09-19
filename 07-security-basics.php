@@ -10,4 +10,8 @@ $password = "SecretP@ss123";
 $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
 echo "Hash generated"; // Result: Hash generated
 
+// Password Verification
+$isValid = password_verify("SecretP@ss123", $hashedPassword);
+var_dump($isValid); // Result: bool(true)
+
 ?>
