@@ -14,4 +14,9 @@ echo "Hash generated"; // Result: Hash generated
 $isValid = password_verify("SecretP@ss123", $hashedPassword);
 var_dump($isValid); // Result: bool(true)
 
+// Prevention of XSS (Cross-Site Scripting)
+$userInput = "<script>alert('xss')</script>";
+echo htmlspecialchars($userInput, ENT_QUOTES, 'UTF-8'); 
+// Result: &lt;script&gt;alert('xss')&lt;/script&gt;
+
 ?>
