@@ -9,4 +9,10 @@ echo calculateTax(100.0); // Result: 12
 // 18. Named Arguments (PHP 8)
 echo calculateTax(rate: 0.15, amount: 200.0); // Result: 30
 
+// 19. Variadic Functions (...$args)
+function sumAll(int ...$numbers): int {
+    return array_sum($numbers);
+}
+echo sumAll(10, 20, 30, 40); // Result: 100
+
 ?>
