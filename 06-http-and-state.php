@@ -13,4 +13,8 @@ echo "Current Page: $page"; // Result: Current Page: 1
 $username = $_POST['username'] ?? '';
 echo "Submitted user: " . htmlspecialchars($username);
 
+// 30. Setting & Reading Cookies
+setcookie("theme", "dark", time() + 3600, "/");
+echo $_COOKIE['theme'] ?? 'light'; // Result: dark (on subsequent request)
+
 ?>
