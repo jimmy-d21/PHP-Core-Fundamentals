@@ -8,4 +8,9 @@ file_put_contents("app.log", "Log entry at " . date("Y-m-d H:i:s") . "\n", FILE_
 $content = file_get_contents("app.log");
 echo substr($content, 0, 20); // Result: Log entry at...
 
+// 25. JSON Processing
+$jsonString = '{"name":"John","role":"Dev"}';
+$decoded = json_decode($jsonString, true);
+echo $decoded['role']; // Result: Dev
+
 ?>
