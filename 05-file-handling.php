@@ -13,4 +13,10 @@ $jsonString = '{"name":"John","role":"Dev"}';
 $decoded = json_decode($jsonString, true);
 echo $decoded['role']; // Result: Dev
 
+// 26. CSV Processing
+$csvData = [["ID", "Name"], [1, "Alice"], [2, "Bob"]];
+$fp = fopen('users.csv', 'w');
+foreach ($csvData as $row) { fputcsv($fp, $row); }
+fclose($fp); // Result: Creates users.csv
+
 ?>
